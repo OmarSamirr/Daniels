@@ -1,0 +1,435 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+  font-weight: 700;
+}
+
+.poppins {
+  font-family: Poppins;
+}
+.montserrat {
+  font-family: "Montserrat";
+}
+
+.home {
+  background-image: url(../imgs/bg.jpg);
+  background-position: top center;
+  background-size: cover;
+}
+.home .layer {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.navbar-brand {
+  font-family: "Montserrat";
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+.nav-link {
+  font-size: 14px;
+  position: relative;
+  color: #111;
+}
+.nav-item {
+  padding: 0 6px;
+}
+.navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+}
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  bottom: 8px;
+  left: 0;
+}
+.h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+h1 {
+  font-size: 60px;
+  font-weight: 200;
+  padding: 5px;
+  padding-bottom: 0;
+  border-right: 2px white solid;
+  width: max-content;
+  margin: auto;
+}
+.my-links a {
+  display: inline-flex;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  border-radius: 50%;
+  margin-left: 3px;
+}
+.my-links {
+  top: 50px;
+}
+.hero-img {
+  width: 95%;
+}
+.backdots {
+  bottom: -30px;
+  right: 30px;
+  background-image: url(../imgs/dots.png);
+  z-index: -1;
+}
+.about h2 {
+  font-weight: 800;
+  font-size: 30px;
+  color: #343434;
+}
+.about .desc {
+  font-size: 14px;
+  color: #999;
+  letter-spacing: 2px;
+}
+.about p {
+  color: #748182;
+  font-size: 15px;
+  font-weight: 400;
+}
+.bar-label {
+  font-family: "Montserrat";
+  font-size: 13px;
+  font-weight: 500;
+}
+.progress-bar {
+  background-color: #1c1c1c;
+}
+.progress {
+  box-shadow: inset 0px 0px 7px lightgray;
+}
+.my-cv-btn {
+  transition: all 0.5s;
+  background-color: #111;
+  padding: 0 2rem;
+}
+.my-contact-btn {
+  transition: all 0.5s;
+  padding: 0 2rem;
+}
+.my-cv-btn:hover {
+  background-color: white;
+  color: black;
+  border: #111 solid 1px;
+}
+.about .btn {
+  font-size: 13px;
+}
+.services,
+.clients,
+.team {
+  background-color: #f7f7f7;
+}
+.title {
+  margin: auto;
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 40px;
+  color: #343434;
+  position: relative;
+  width: fit-content;
+  z-index: 1;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-image: url(../imgs/dots.png);
+  z-index: -1;
+}
+:is(.services, .contact) .icon {
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  background-color: #f7f7f7;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.services .content {
+  box-shadow: 0px 0px 20px rgb(223, 223, 223);
+}
+:is(.services, .contact) h5 {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 18px;
+  color: #343434;
+}
+:is(.services, .contact, .copyright) p {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: #748182;
+  word-spacing: 2px;
+}
+:is(.services, .contact) .content:hover .icon {
+  background-color: #1c1c1c;
+  color: #eee;
+}
+.my-navs button {
+  color: #222;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 1rem;
+}
+.my-navs .nav {
+  --bs-nav-link-hover-color: unset;
+}
+.my-navs .active::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  bottom: 2px;
+  left: 0;
+  transition: width 2s ease-in;
+}
+.works .img .layer {
+  background-color: #fdfdfdea;
+  width: 97%;
+  height: 97%;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.works .icon {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  top: 50%;
+  transition: top 0.5s;
+}
+.works h6 {
+  top: 33%;
+  transition: all 0.5s;
+  font-size: 12px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.works .img:hover h6 {
+  top: 40%;
+}
+.works .img:hover .icon {
+  top: 45%;
+}
+.works .img:hover .layer {
+  top: 50%;
+  opacity: 1;
+}
+.works .icon:hover {
+  background-color: white;
+  color: black;
+  border: #111 solid 1px;
+}
+.clients .test-img {
+  width: 100px;
+  margin: auto;
+  border-radius: 50%;
+}
+.clients .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  margin: 8px;
+  border-radius: 50%;
+  background-color: #d6d6d6;
+}
+.clients .carousel-indicators button:hover {
+  background-color: #869791;
+}
+.clients .carousel-indicators button.active {
+  background-color: #869791;
+}
+.clients .carousel {
+  width: 60%;
+}
+.clients .carousel p {
+  font-size: 15px;
+  font-family: "Poppins";
+  word-spacing: 2px;
+  color: #748182;
+}
+.clients .carousel span {
+  font-size: 12px;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #888;
+}
+.clients .carousel h6 {
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: #343434;
+}
+#numbers .icon,
+#numbers h3 {
+  font-size: 30px;
+  color: #343434;
+}
+#numbers h3 {
+  font-weight: 900;
+  font-family: "Montserrat";
+}
+#numbers p {
+  font-weight: 600;
+  font-family: "Poppins";
+  font-size: 15px;
+  color: #748182;
+}
+.team .card-body {
+  background-color: #5b5b5b;
+}
+.team h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.team h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.team .card .layer {
+  background-color: #fdfdfdea;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(180deg);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.team .icon {
+  display: inline-flex;
+  width: 10%;
+  height: 10%;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  top: 50%;
+  margin: 5px;
+}
+.team .icon:hover {
+  background-color: white;
+  color: black;
+  border: #111 solid 1px;
+}
+.team .card:hover .layer {
+  width: 97%;
+  height: 97%;
+  transform: rotateY(0deg) translate(-50%, -50%);
+  opacity: 1;
+}
+.team .img:hover img {
+  scale: 1.2;
+}
+.team img {
+  transition: all 0.5s;
+}
+.contact .inner-container {
+  width: 85%;
+}
+.contact i {
+  font-size: 25px;
+}
+.contact h5 {
+  font-size: 16px;
+}
+.contact p {
+  font-size: 15px;
+}
+.contact .icon {
+  width: 35px;
+  height: 35px;
+  padding: 30px;
+}
+.form-control {
+  border: none;
+  background-color: #f4f4f4;
+  width: 48%;
+  display: inline;
+}
+.form-control:focus {
+  border: none;
+  box-shadow: none;
+  background-color: #f4f4f4;
+}
+.copyright {
+  background-color: #1c1c1c;
+}
+@media (min-width: 1400px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1180px;
+  }
+}
+@media screen and (max-width: 1170px) {
+  h1 {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contact .inner-container {
+    width: 100%;
+  }
+  .form-control {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .nav-link {
+    width: fit-content;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+  .contact .inner-container {
+    width: 100%;
+  }
+  .form-control {
+    width: 100%;
+  }
+}
