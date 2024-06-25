@@ -2,8 +2,8 @@
 
 An Online Portfolio.
 
-# Demo
-The Website [Link]([https://pages.github.com/](https://omarsamirr.github.io/Daniels/)).
+## Demo
+The Website [Link](https://omarsamirr.github.io/Daniels/).
 
 ## Technologies Used
 
